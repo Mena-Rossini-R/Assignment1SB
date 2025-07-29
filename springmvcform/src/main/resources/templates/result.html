@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Info</title>
+</head>
+<body>
+<h2>User Info Submitted</h2>
+<p><strong>Name:</strong> <span th:text="${user.name}"></span></p>
+<p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+
+<p><strong>Addresses:</strong></p>
+<ul>
+    <li th:each="addr : ${user.addresses}" th:text="${addr.city + ', ' + addr.state}"></li>
+</ul>
+
+<p><strong>Phones:</strong></p>
+<ul>
+    <li th:each="ph : ${user.phones}" th:text="${ph}"></li>
+</ul>
+</body>
+</html>
