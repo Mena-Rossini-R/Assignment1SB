@@ -1,11 +1,11 @@
-# 🧾 Spring Boot MVC Dynamic Form Assignment – S4-E2
+# Spring Boot MVC Dynamic Form Assignment – S4-E2
 
-## 🧠 Aim
+##  Aim
 To create a Spring Boot MVC application that captures a user's name, email, multiple addresses (with city and state), and phone numbers through a dynamic form. The submitted data should be mapped to a nested object structure using Spring MVC and displayed in a structured format on the result page.
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 - Java 17
 - Spring Boot
 - Spring MVC
@@ -15,16 +15,14 @@ To create a Spring Boot MVC application that captures a user's name, email, mult
 ---
 
 
----
-
-## 🔁 Execution Flow
+## Execution Flow
 1. `GET /form` → Displays a form to enter user details.
 2. User fills in name, email, dynamic addresses, and phone numbers.
 3. `POST /submit` → Maps the submitted data to a `User` object and displays it.
 
 ---
 
-## 📦 Model Classes
+##  Model Classes
 
 ### ➤ Address.java
 ```java
@@ -72,7 +70,7 @@ public class User {
 
 ---
 
-## 🧠 Controller
+##  Controller
 
 ### ➤ UserController.java
 ```java
@@ -109,7 +107,7 @@ public class UserController {
 
 ---
 
-## 🖼️ View Templates
+## 🖼 View Templates
 
 ### ➤ form.html
 ```html
@@ -183,14 +181,14 @@ function addAddress() {
 
 ---
 
-## ▶️ Running the Project
+## ▶Running the Project
 1. Open the project in your IDE.
 2. Run `SpringmvcformApplication.java`.
 3. Visit: `http://localhost:8080/form` in your browser.
 
 ---
 
-## ✅ Sample Input
+##  Sample Input
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2dd81624-e94f-4ba5-9e22-8a8804d9665b" />
 
